@@ -4,6 +4,7 @@
 This template maps repository controls to external frameworks for alignment and traceability.
 
 This is an alignment aid only. It does not provide certification, legal advice, or a claim of formal compliance.
+The mapping must be adapted to each organization's risk profile, legal context, and control environment.
 
 ## Frameworks Included
 - Gartner AI TRiSM (conceptual operating model reference)

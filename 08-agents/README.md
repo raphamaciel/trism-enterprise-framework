@@ -2,6 +2,10 @@
 
 This folder defines core operational agents used by the TRiSM framework.
 
+This repository is an independent, experimental governance-as-code project. It is not affiliated with or endorsed by Gartner and does not provide certification, legal advice, or compliance guarantees.
+
+Agent specifications are templates and examples that require organization-specific adaptation.
+
 ## Folder Structure
 - One folder per agent using pattern: `AGT-<id>-<slug>/`
 - Each agent folder contains:

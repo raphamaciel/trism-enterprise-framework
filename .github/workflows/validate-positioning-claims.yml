@@ -1,0 +1,55 @@
+name: Validate Positioning Claims
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".github/workflows/validate-positioning-claims.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - ".github/workflows/validate-positioning-claims.yml"
+
+jobs:
+  positioning-claims-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect restricted claims
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          fail=0
+
+          declare -a restricted_patterns=(
+            "TRiSM certified"
+            "TRiSM certification"
+            "guaranteed compliance"
+            "compliant by default"
+            "official Gartner implementation"
+          )
+
+          for pattern in "${restricted_patterns[@]}"; do
+            if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' "$pattern" .; then
+              echo "::error::Restricted positioning claim detected: $pattern"
+              fail=1
+            fi
+          done
+
+          # Special handling for endorsement wording: allow clear negative disclaimer forms only.
+          if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' "endorsed by Gartner" . | grep -vE "not affiliated with or endorsed by Gartner|not endorsed by Gartner"; then
+            echo "::error::Potential endorsement claim detected. Use explicit non-endorsement wording."
+            fail=1
+          fi
+
+          if [[ $fail -ne 0 ]]; then
+            exit 1
+          fi
+
+          echo "Positioning claims validation passed."

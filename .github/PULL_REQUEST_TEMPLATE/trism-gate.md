@@ -41,3 +41,6 @@ Exception ID:
 
 ### Validation
 - [ ] I confirm this PR includes all required governance evidence.
+- [ ] I confirm this PR does not imply Gartner endorsement or affiliation.
+- [ ] I confirm this PR does not claim certification or compliance guarantees.
+- [ ] I confirm artifacts are presented as templates/examples requiring adaptation.

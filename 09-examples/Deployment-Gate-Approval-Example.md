@@ -1,6 +1,7 @@
 # Example Deployment Gate Approval (Fictional)
 
 This approval record is fictional and demonstrates a practical Gate 3 decision entry.
+This example is not legal advice, not a certification artifact, and not a compliance guarantee.
 
 ## Gate Context
 - Gate: Gate 3: Go-Live Assurance

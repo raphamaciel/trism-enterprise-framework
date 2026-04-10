@@ -6,6 +6,12 @@ This is an independent, AI-generated, experimental open-source repository.
 It is not affiliated with, endorsed by, or sponsored by Gartner.
 It does not provide certification, legal advice, or compliance guarantees.
 
+## Positioning Guardrails
+- Independent, experimental, and educational repository
+- No Gartner affiliation or endorsement
+- No certification or compliance guarantee claims
+- Templates and examples require organization-specific adaptation
+
 ## Experimental Purpose
 This repository exists for experimentation, learning, and practical exploration of AI governance concepts using governance-as-code patterns.
 
@@ -18,6 +24,16 @@ TRiSM is treated here as a practical operating model implemented through enginee
 
 ## Repository Mission
 Move AI governance from static policy documents into operational practice through versioned artifacts, reviewable evidence, and enforceable workflows.
+
+## What This Repository Is
+- A governance-as-code reference implementation for AI trust, risk, and security operations
+- A set of reusable templates and examples for lifecycle governance
+- A practical repository for experimentation and learning
+
+## What This Repository Is Not
+- A legal or regulatory interpretation authority
+- A certification framework or attestation mechanism
+- A guarantee of compliance outcomes without organization-specific controls and legal review
 
 ## Intended Audience
 - AI platform engineering teams
@@ -105,6 +121,12 @@ It is not a statement of endorsement, legal interpretation, or certification sta
 - Risk and management frameworks can structure governance activities.
 - Regulatory sources can define mandatory obligations where applicable.
 - Engineering and runtime models can operationalize controls and monitoring.
+
+## Language and Claims Policy
+- Use "alignment" and "mapping" language for cross-framework references.
+- Do not claim endorsement, certification, or compliance guarantees.
+- Treat all repository artifacts as templates and examples requiring adaptation.
+- Maintainers and contributors should follow `01-governance/Positioning-Language-Policy.md`.
 
 ## How To Use
 1. Copy templates and populate them for your deployment context.

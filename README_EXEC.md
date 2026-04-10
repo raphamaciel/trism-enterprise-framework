@@ -1,5 +1,7 @@
 # Executive Summary: AI TRiSM Governance-as-Code Repository
 
+This repository is an independent, experimental governance-as-code project. It is not affiliated with or endorsed by Gartner and does not provide certification, legal advice, or compliance guarantees.
+
 ## What This Repository Is
 An experimental, open-source governance-as-code repository for operationalizing AI trust, risk, and security practices.
 
@@ -40,6 +42,8 @@ Decision-making and control ownership are distributed across governance, securit
 2. Use pull requests as governance checkpoints.
 3. Require designated approvers before merge.
 4. Maintain decision and exception records with time-bound reviews.
+
+All artifacts in this repository are templates and examples that require organization-specific adaptation.
 
 ## Reference Alignment
 Repository artifacts are designed for practical alignment with:

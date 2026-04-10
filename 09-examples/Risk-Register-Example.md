@@ -1,6 +1,7 @@
 # Example Risk Register (Fictional)
 
 This example is fictional and for learning purposes only. Adapt fields, scoring, and treatment plans to your organization.
+This example is not legal advice, not a certification artifact, and not a compliance guarantee.
 
 | Risk ID | Domain | Description | Likelihood (1-5) | Impact (1-5) | Inherent Score | Treatment Strategy | Risk Owner | Review Cadence | Due Date | Residual Score | Risk Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|

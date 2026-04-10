@@ -1,5 +1,7 @@
 # AI Governance Charter (One Page)
 
+This repository is an independent, experimental governance-as-code project. It is not affiliated with or endorsed by Gartner and does not provide certification, legal advice, or compliance guarantees.
+
 ## Charter Name
 Enterprise TRiSM Charter for Framework Deployment
 

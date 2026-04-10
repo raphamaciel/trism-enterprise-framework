@@ -1,6 +1,7 @@
 # Example Model Card (Fictional)
 
 This model card is fictional and intended to demonstrate how assurance artifacts can be populated.
+This example is not legal advice, not a certification artifact, and not a compliance guarantee.
 
 ## Model Identity
 - Model name: SupportCaseAssist-v2
