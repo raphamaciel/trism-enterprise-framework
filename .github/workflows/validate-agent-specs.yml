@@ -1,0 +1,80 @@
+name: Validate TRiSM Agent Specs
+
+on:
+  pull_request:
+    paths:
+      - "08-agents/**"
+      - ".github/workflows/validate-agent-specs.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "08-agents/**"
+      - ".github/workflows/validate-agent-specs.yml"
+
+jobs:
+  validate-agent-specs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate catalog spec file references
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ ! -f "08-agents/catalog.yaml" ]]; then
+            echo "::error file=08-agents/catalog.yaml::Missing catalog.yaml"
+            exit 1
+          fi
+
+          while IFS= read -r spec_file; do
+            if [[ -z "${spec_file}" ]]; then
+              continue
+            fi
+
+            if [[ ! -f "${spec_file}" ]]; then
+              echo "::error file=08-agents/catalog.yaml::Referenced spec file does not exist: ${spec_file}"
+              exit 1
+            fi
+          done < <(awk '/specFile:/{print $2}' 08-agents/catalog.yaml)
+
+      - name: Validate required sections in agent specs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          missing=0
+          required_sections=(
+            "## Mission"
+            "## Inputs"
+            "## Outputs"
+            "## Human Approval Boundary"
+            "## KPIs"
+            "## KRIs"
+          )
+
+          shopt -s nullglob
+          files=(08-agents/*-agent.md)
+
+          if [[ ${#files[@]} -eq 0 ]]; then
+            echo "::error::No agent spec files found matching 08-agents/*-agent.md"
+            exit 1
+          fi
+
+          for file in "${files[@]}"; do
+            for section in "${required_sections[@]}"; do
+              if ! grep -Fq "${section}" "${file}"; then
+                echo "::error file=${file}::Missing required section: ${section}"
+                missing=1
+              fi
+            done
+          done
+
+          if [[ ${missing} -ne 0 ]]; then
+            exit 1
+          fi
+
+          echo "All TRiSM agent specs passed validation."
