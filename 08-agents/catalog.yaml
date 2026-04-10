@@ -29,3 +29,24 @@ agents:
     ownerRole: Platform Engineering Lead
     specFile: 08-agents/runtime-monitoring-drift-agent.md
     criticality: high
+  - id: AGT-005
+    name: AI Impact Assessment Agent
+    category: governance
+    stage: pre-development
+    ownerRole: AI Governance Lead
+    specFile: 08-agents/ai-impact-assessment-agent.md
+    criticality: high
+  - id: AGT-006
+    name: Fairness and Inclusiveness Monitoring Agent
+    category: model-risk
+    stage: post-deploy
+    ownerRole: Model Risk Lead
+    specFile: 08-agents/fairness-inclusiveness-monitoring-agent.md
+    criticality: high
+  - id: AGT-007
+    name: Sensitive Use Triage Agent
+    category: governance
+    stage: continuous
+    ownerRole: Privacy Lead
+    specFile: 08-agents/sensitive-use-triage-agent.md
+    criticality: high

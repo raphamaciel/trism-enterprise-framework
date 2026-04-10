@@ -4,10 +4,16 @@ This folder defines core operational agents used by the TRiSM framework.
 
 ## Agent Set
 
+### TRiSM Core Agents
 - AGT-001 Deployment Gatekeeper Agent
 - AGT-002 Control Evidence Agent
 - AGT-003 Model Risk Assessment Agent
 - AGT-004 Runtime Monitoring and Drift Agent
+
+### Microsoft Responsible AI Standard (RAS) Agents
+- AGT-005 AI Impact Assessment Agent
+- AGT-006 Fairness and Inclusiveness Monitoring Agent
+- AGT-007 Sensitive Use Triage Agent
 
 ## Common Contract
 
