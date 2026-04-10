@@ -17,6 +17,7 @@ This repository provides a practical Governance-as-Code structure for Trust, Ris
 - `05-security-privacy-evidence` - security baseline and privacy impact evidence
 - `06-deployment-gates` - gate checklists and approval records
 - `07-audit-evidence-decisions` - exception logs and decision records
+- `08-agents` - operational agent specifications and catalog
 - `99-operations` - runbooks, KPI/KRI dashboards, and review cadence
 
 ## How To Use

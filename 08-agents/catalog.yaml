@@ -1,0 +1,31 @@
+version: 1
+framework: trism-enterprise
+agents:
+  - id: AGT-001
+    name: Deployment Gatekeeper Agent
+    category: governance
+    stage: pre-deploy
+    ownerRole: AI Governance Lead
+    specFile: 08-agents/deployment-gatekeeper-agent.md
+    criticality: high
+  - id: AGT-002
+    name: Control Evidence Agent
+    category: assurance
+    stage: continuous
+    ownerRole: Internal Audit Liaison
+    specFile: 08-agents/control-evidence-agent.md
+    criticality: high
+  - id: AGT-003
+    name: Model Risk Assessment Agent
+    category: model-risk
+    stage: pre-deploy
+    ownerRole: Model Risk Lead
+    specFile: 08-agents/model-risk-assessment-agent.md
+    criticality: high
+  - id: AGT-004
+    name: Runtime Monitoring and Drift Agent
+    category: operations
+    stage: post-deploy
+    ownerRole: Platform Engineering Lead
+    specFile: 08-agents/runtime-monitoring-drift-agent.md
+    criticality: high
