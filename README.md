@@ -45,6 +45,21 @@ This repository covers the following lifecycle phases:
 - `08-agents` - agent specifications and agent governance controls
 - `99-operations` - incident response, feedback loop, and accountability operations
 
+## TRiSM Architecture View
+```mermaid
+flowchart TD
+	A[Governance Layer\n01-governance] --> B[Design Assurance\nGate 1]
+	B --> C[Risk and Assurance Layer\n02-architecture-threat-modeling\n03-risk-control-registers\n04-model-assurance\n05-security-privacy-evidence]
+	C --> D[Pre-Production Assurance\nGate 2]
+	D --> E[Release Authorization\nGate 3]
+	E --> F[Runtime Operations\nGate 4\n99-operations]
+	F --> G[Audit and Decision Trace\n07-audit-evidence-decisions]
+	G --> H[Control and Policy Feedback\n01-governance]
+
+	I[Agent Governance\n08-agents] --> C
+	I --> F
+```
+
 ## Governance-as-Code Flow
 Pull requests and protected branch workflows are used as enforceable governance controls:
 1. Create or update governance artifacts in a pull request.
