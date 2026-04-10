@@ -43,7 +43,7 @@ jobs:
           done
 
           # Special handling for endorsement wording: allow clear negative disclaimer forms only.
-          if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' "endorsed by Gartner" . | grep -vE "not affiliated with or endorsed by Gartner|not endorsed by Gartner"; then
+          if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' -i "endorsed by Gartner" . | grep -viE "not affiliated with or endorsed by gartner|not endorsed by gartner|not affiliated with, endorsed by, or sponsored by gartner"; then
             echo "::error::Potential endorsement claim detected. Use explicit non-endorsement wording."
             fail=1
           fi
