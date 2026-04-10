@@ -1,6 +1,6 @@
 # Enterprise TRiSM Artifact Repository
 
-This repository provides a practical Governance-as-Code structure for Trust, Risk, and Security Management (TRiSM) in enterprise framework deployments.
+This is an AI generated repository to provide a practical Governance-as-Code structure for Trust, Risk, and Security Management (TRiSM) in enterprise framework deployments.
 
 ## Purpose
 
