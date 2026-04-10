@@ -93,7 +93,7 @@ Framework alignment in this repository is informational and operational. It shou
 5. Track decisions and exceptions with time-bound review criteria.
 
 ## Optional Repository Assets
-- `examples/Risk-Register-Example.md` - fictional risk register example
-- `examples/Model-Card-Example.md` - fictional model card example
-- `examples/Deployment-Gate-Approval-Example.md` - fictional gate approval example
+- `09-examples/Risk-Register-Example.md` - fictional risk register example
+- `09-examples/Model-Card-Example.md` - fictional model card example
+- `09-examples/Deployment-Gate-Approval-Example.md` - fictional gate approval example
 - `README_EXEC.md` - executive summary variant for leadership stakeholders
