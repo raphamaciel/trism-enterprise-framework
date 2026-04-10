@@ -85,6 +85,27 @@ This repository is designed for practical alignment and mapping across multiple 
 
 Framework alignment in this repository is informational and operational. It should not be interpreted as formal compliance or certification.
 
+## AI Governance Framework Comparison (Informational)
+The table below is a practical comparison aid for planning governance coverage.
+
+It is not a statement of endorsement, legal interpretation, or certification status.
+
+| Framework | Primary Purpose | Focus Level | Common Strength | Common Limitation |
+| --- | --- | --- | --- | --- |
+| OECD AI Principles | Ethics and trust principles | Values and policy | Shared vocabulary for trustworthy AI principles | Not a direct implementation method |
+| NIST AI Risk Management Framework (RMF) | AI risk management | Lifecycle and risk functions | Structured risk management approach using Govern, Map, Measure, Manage | Requires organization-specific implementation detail |
+| ISO/IEC 42001 | AI management system standard | Organization and process | Management system structure for governance and assurance programs | Typically process-heavy without technical enforcement detail |
+| EU AI Act | Risk-based regulation | Legal and regulatory obligations | Clear legal obligations by risk class where applicable | Jurisdiction-specific and not an implementation blueprint |
+| Microsoft Responsible AI Standard | Engineering governance guidance | Product and platform practices | Practical engineering-oriented responsible AI practices | Vendor-origin guidance that should be adapted to local context |
+| Google Responsible AI guidance | Safety and research practices | Model and tooling practices | Strong model safety and evaluation practices | Not a full enterprise governance operating model by itself |
+| Gartner AI TRiSM | Trust, risk, and security management | Runtime operations and control enforcement | Emphasis on operational controls and continuous runtime governance | Requires integration with existing policy, risk, and assurance frameworks |
+
+### Practical Planning View
+- Principles and values references can define intent and policy direction.
+- Risk and management frameworks can structure governance activities.
+- Regulatory sources can define mandatory obligations where applicable.
+- Engineering and runtime models can operationalize controls and monitoring.
+
 ## How To Use
 1. Copy templates and populate them for your deployment context.
 2. Open a pull request using `.github/PULL_REQUEST_TEMPLATE/trism-gate.md`.
