@@ -1,0 +1,12 @@
+# Default owners for all repository changes
+* @your-org/trism-governance
+
+# Domain-specific owners
+01-governance/ @your-org/trism-governance @your-org/internal-audit
+02-architecture-threat-modeling/ @your-org/security-architecture
+03-risk-control-registers/ @your-org/risk-management
+04-model-assurance/ @your-org/model-risk
+05-security-privacy-evidence/ @your-org/security-operations @your-org/privacy-office
+06-deployment-gates/ @your-org/platform-engineering @your-org/trism-governance
+07-audit-evidence-decisions/ @your-org/internal-audit
+99-operations/ @your-org/platform-engineering @your-org/trism-governance
