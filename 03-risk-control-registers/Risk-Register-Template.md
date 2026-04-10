@@ -1,7 +1,7 @@
 # Risk Register Template
 
-| Risk ID | Domain | Description | Likelihood (1-5) | Impact (1-5) | Inherent Score | Treatment Strategy | Owner | Due Date | Residual Score | Status |
-|---|---|---|---|---|---|---|---|---|---|---|
+| Risk ID | Domain | Description | Likelihood (1-5) | Impact (1-5) | Inherent Score | Treatment Strategy | Risk Owner | Review Cadence | Due Date | Residual Score | Risk Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
 ## Treatment Strategies
 - Avoid
@@ -9,9 +9,7 @@
 - Transfer
 - Accept
 
-## Status Values
+## Risk Status Values
 - Open
-- In Treatment
 - Mitigated
 - Accepted
-- Closed

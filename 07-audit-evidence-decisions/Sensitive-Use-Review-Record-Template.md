@@ -37,8 +37,11 @@
 
 ## Decision
 - Approved / Approved with conditions / Rejected:
+- Decision owner:
 - Conditions:
+- Justification:
 - Expiry date of this review:
+- Time-bound review criteria:
 
 ## Approvals
 - Governance Lead:

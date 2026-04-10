@@ -24,9 +24,11 @@ Each agent specification includes:
 - escalation and human approval boundaries
 - KPI and KRI measures
 - integration points with repository templates
+- governance controls for allowed actions, autonomy, and shutdown behavior
 
 ## Implementation Notes
 
 - All high-risk decisions require human approval.
 - All agent actions must produce immutable decision logs.
 - Agent outputs should be attached to pull requests for auditability.
+- Use `Agent-Governance-Control-Template.md` for agent-level control design and revalidation.
