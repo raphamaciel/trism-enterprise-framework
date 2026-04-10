@@ -2,6 +2,13 @@
 
 This folder defines core operational agents used by the TRiSM framework.
 
+## Folder Structure
+- One folder per agent using pattern: `AGT-<id>-<slug>/`
+- Each agent folder contains:
+	- `agent.md` for the primary agent specification
+	- `skills/` for future agent-specific skills and assets
+- Shared templates and reusable assets are under `shared/`
+
 ## Agent Set
 
 ### TRiSM Core Agents
@@ -31,4 +38,4 @@ Each agent specification includes:
 - All high-risk decisions require human approval.
 - All agent actions must produce immutable decision logs.
 - Agent outputs should be attached to pull requests for auditability.
-- Use `Agent-Governance-Control-Template.md` for agent-level control design and revalidation.
+- Use `shared/templates/Agent-Governance-Control-Template.md` for agent-level control design and revalidation.

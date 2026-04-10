@@ -57,10 +57,10 @@ jobs:
           )
 
           shopt -s nullglob
-          files=(08-agents/*-agent.md)
+          files=(08-agents/AGT-*/agent.md)
 
           if [[ ${#files[@]} -eq 0 ]]; then
-            echo "::error::No agent spec files found matching 08-agents/*-agent.md"
+            echo "::error::No agent spec files found matching 08-agents/AGT-*/agent.md"
             exit 1
           fi
 
@@ -78,3 +78,25 @@ jobs:
           fi
 
           echo "All TRiSM agent specs passed validation."
+
+      - name: Validate agent skills folders
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          shopt -s nullglob
+          agent_dirs=(08-agents/AGT-*)
+
+          if [[ ${#agent_dirs[@]} -eq 0 ]]; then
+            echo "::error::No agent directories found matching 08-agents/AGT-*"
+            exit 1
+          fi
+
+          for dir in "${agent_dirs[@]}"; do
+            if [[ ! -d "${dir}/skills" ]]; then
+              echo "::error file=${dir}::Missing required skills folder"
+              exit 1
+            fi
+          done
+
+          echo "All agent directories include a skills folder."
