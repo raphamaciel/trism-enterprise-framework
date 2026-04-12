@@ -135,6 +135,11 @@ It is not a statement of endorsement, legal interpretation, or certification sta
 4. Obtain required gate and domain approvals before merge.
 5. Track decisions and exceptions with time-bound review criteria.
 
+## Documentation
+- `docs/01-concepts.md` - trust, risk, security, and governance-as-code concepts
+- `docs/02-lifecycle-and-gates.md` - lifecycle coverage and gate execution guidance
+- `docs/03-artifact-usage-guide.md` - when to use each artifact and minimum completion criteria
+
 ## Optional Repository Assets
 - `09-examples/Risk-Register-Example.md` - fictional risk register example
 - `09-examples/Model-Card-Example.md` - fictional model card example
