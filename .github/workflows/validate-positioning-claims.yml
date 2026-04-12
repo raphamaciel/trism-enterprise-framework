@@ -36,14 +36,14 @@ jobs:
           )
 
           for pattern in "${restricted_patterns[@]}"; do
-            if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' "$pattern" .; then
+            if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' --exclude='00-source-policy.md' "$pattern" .; then
               echo "::error::Restricted positioning claim detected: $pattern"
               fail=1
             fi
           done
 
           # Special handling for endorsement wording: allow clear negative disclaimer forms only.
-          if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' -i "endorsed by Gartner" . | grep -viE "not affiliated with or endorsed by gartner|not endorsed by gartner|not affiliated with, endorsed by, or sponsored by gartner"; then
+          if grep -RIn --include='*.md' --exclude='Positioning-Language-Policy.md' --exclude='00-source-policy.md' -i "endorsed by Gartner" . | grep -viE "not affiliated with or endorsed by gartner|not endorsed by gartner|not affiliated with, endorsed by, or sponsored by gartner"; then
             echo "::error::Potential endorsement claim detected. Use explicit non-endorsement wording."
             fail=1
           fi
