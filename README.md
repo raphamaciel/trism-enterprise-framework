@@ -139,6 +139,8 @@ It is not a statement of endorsement, legal interpretation, or certification sta
 - `10-docs/01-concepts.md` - trust, risk, security, and governance-as-code concepts
 - `10-docs/02-lifecycle-and-gates.md` - lifecycle coverage and gate execution guidance
 - `10-docs/03-artifact-usage-guide.md` - when to use each artifact and minimum completion criteria
+- `10-docs/04-role-based-playbooks.md` - role-specific execution playbooks for governance activities
+- `10-docs/06-review-and-approval-workflow.md` - auditable PR and gate approval workflow guidance
 - `10-docs/00-source-policy.md` - source tiers, citation rules, and claim boundaries
 - `10-docs/11-reference-register.md` - canonical source register with source IDs
 - `10-docs/12-framework-nist-ai-rmf.md` - NIST AI RMF deep-dive and mapping
