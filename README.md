@@ -139,6 +139,15 @@ It is not a statement of endorsement, legal interpretation, or certification sta
 - `10-docs/01-concepts.md` - trust, risk, security, and governance-as-code concepts
 - `10-docs/02-lifecycle-and-gates.md` - lifecycle coverage and gate execution guidance
 - `10-docs/03-artifact-usage-guide.md` - when to use each artifact and minimum completion criteria
+- `10-docs/00-source-policy.md` - source tiers, citation rules, and claim boundaries
+- `10-docs/11-reference-register.md` - canonical source register with source IDs
+- `10-docs/12-framework-nist-ai-rmf.md` - NIST AI RMF deep-dive and mapping
+- `10-docs/13-framework-eu-ai-act.md` - EU AI Act deep-dive and applicability notes
+- `10-docs/14-framework-microsoft-rai.md` - Microsoft Responsible AI deep-dive
+- `10-docs/15-framework-google-rai.md` - Google Responsible AI deep-dive
+- `10-docs/16-framework-trism.md` - TRiSM conceptual deep-dive and caveats
+- `10-docs/17-framework-oecd-ai-principles.md` - OECD principles deep-dive
+- `10-docs/18-artifact-framework-crosswalk.md` - artifact-to-framework alignment crosswalk
 
 ## Optional Repository Assets
 - `09-examples/Risk-Register-Example.md` - fictional risk register example

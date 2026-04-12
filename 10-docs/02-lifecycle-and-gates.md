@@ -37,3 +37,9 @@ Explain where each governance gate applies and which repository artifacts suppor
 3. Validate ownership and review dates.
 4. Route PR to required approvers.
 5. Record decision and any exceptions.
+
+## Sources
+- SRC-NIST-001
+- SRC-GARTNER-001
+
+Last verified: 2026-04-12

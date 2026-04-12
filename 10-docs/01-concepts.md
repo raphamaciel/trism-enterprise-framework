@@ -46,3 +46,10 @@ Before using any artifact in production decision-making:
 2. Define review cadence.
 3. Link supporting evidence.
 4. Record approvals and exceptions.
+
+## Sources
+- SRC-NIST-001
+- SRC-OECD-001
+- SRC-GARTNER-001
+
+Last verified: 2026-04-12

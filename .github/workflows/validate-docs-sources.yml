@@ -1,0 +1,81 @@
+name: Validate Documentation Sources
+
+on:
+  pull_request:
+    paths:
+      - "10-docs/**"
+      - ".github/workflows/validate-docs-sources.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "10-docs/**"
+      - ".github/workflows/validate-docs-sources.yml"
+
+jobs:
+  docs-source-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required sections
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          missing=0
+
+          shopt -s nullglob
+          files=(10-docs/*.md)
+
+          if [[ ${#files[@]} -eq 0 ]]; then
+            echo "::error::No documentation files found under 10-docs"
+            exit 1
+          fi
+
+          for file in "${files[@]}"; do
+            if ! grep -Fq "## Sources" "$file"; then
+              echo "::error file=${file}::Missing required section: ## Sources"
+              missing=1
+            fi
+
+            if ! grep -Fq "Last verified:" "$file"; then
+              echo "::error file=${file}::Missing required metadata: Last verified:"
+              missing=1
+            fi
+          done
+
+          if [[ $missing -ne 0 ]]; then
+            exit 1
+          fi
+
+          echo "Documentation source sections validated."
+
+      - name: Validate source IDs exist in reference register
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          reference_file="10-docs/11-reference-register.md"
+          if [[ ! -f "$reference_file" ]]; then
+            echo "::error::Missing reference register: $reference_file"
+            exit 1
+          fi
+
+          all_ids=$(grep -RhoE 'SRC-[A-Z]+-[0-9]+' 10-docs/*.md | sort -u)
+          missing=0
+
+          for id in $all_ids; do
+            if ! grep -Fq "$id" "$reference_file"; then
+              echo "::error::Source ID not found in reference register: $id"
+              missing=1
+            fi
+          done
+
+          if [[ $missing -ne 0 ]]; then
+            exit 1
+          fi
+
+          echo "All source IDs are registered."

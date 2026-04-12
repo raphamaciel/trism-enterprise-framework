@@ -33,3 +33,11 @@ Help contributors understand when to use each artifact template, who should own 
 - 09-examples/Risk-Register-Example.md
 - 09-examples/Model-Card-Example.md
 - 09-examples/Deployment-Gate-Approval-Example.md
+
+## Sources
+- SRC-NIST-001
+- SRC-EU-001
+- SRC-MS-001
+- SRC-GOOG-001
+
+Last verified: 2026-04-12
