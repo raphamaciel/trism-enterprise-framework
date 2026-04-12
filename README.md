@@ -136,9 +136,9 @@ It is not a statement of endorsement, legal interpretation, or certification sta
 5. Track decisions and exceptions with time-bound review criteria.
 
 ## Documentation
-- `docs/01-concepts.md` - trust, risk, security, and governance-as-code concepts
-- `docs/02-lifecycle-and-gates.md` - lifecycle coverage and gate execution guidance
-- `docs/03-artifact-usage-guide.md` - when to use each artifact and minimum completion criteria
+- `10-docs/01-concepts.md` - trust, risk, security, and governance-as-code concepts
+- `10-docs/02-lifecycle-and-gates.md` - lifecycle coverage and gate execution guidance
+- `10-docs/03-artifact-usage-guide.md` - when to use each artifact and minimum completion criteria
 
 ## Optional Repository Assets
 - `09-examples/Risk-Register-Example.md` - fictional risk register example

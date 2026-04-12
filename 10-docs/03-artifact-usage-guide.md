@@ -23,8 +23,8 @@ Help contributors understand when to use each artifact template, who should own 
 - Using examples as production-ready artifacts without adaptation.
 
 ## Suggested Contributor Path
-1. Read docs/01-concepts.md.
-2. Read docs/02-lifecycle-and-gates.md.
+1. Read 10-docs/01-concepts.md.
+2. Read 10-docs/02-lifecycle-and-gates.md.
 3. Select and complete required templates.
 4. Open PR using the governance template.
 5. Obtain approvals and record the decision.
